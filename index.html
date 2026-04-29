@@ -1,6 +1,6 @@
 <!-- Unit 12 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
+[x] Two Interactive Drop-down Inputs 
 [  ] Standard Animation
 [  ] Custom Animation
 [  ] Include Three Images
@@ -21,71 +21,72 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>You Can Think Pad</h1>
     <hr />
-    <!-- Movie Question -->
-    <form id="movie-form">
+    <!-- Math Question 1 -->
+    <form id="math1-form">
       <label>
-        🎥 What is my favorite movie?
-        <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+        <strong>Solve Math Q1</strong><br>8+7=?
+        <select id="math1-answer">
+          <option value="math11">56</option>
+          <option value="math12">1</option>
+          <option value="math13">15</option>
+          <option value="math14">14</option>
         </select>
       </label>
-      <button type="submit">Check Movie Answer</button>
+      <button type="submit">Check Math Answer</button>
     </form>
-    <div id="movie-result">
-      <p id="movie-text"></p>
+    <div id="math1-result">
+      <p id="math1-text"></p>
     </div>
     <hr />
-    <!-- Book Question -->
-    <form id="book-form">
+    <!-- Math Question 2 -->
+    <form id="math2-form">
       <label>
-        📖 What is my favorite book?
-        <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+        <strong>Solve Math Q2</strong><br>4-9=?
+        <select id="math2-answer">
+          <option value="math21">-36</option>
+          <option value="math22">-5</option>
+          <option value="math23">13</option>
+          <option value="math24">5</option>
         </select>
       </label>
-      <button type="submit">Check Book Answer</button>
+      <button type="submit">Check Math Answer</button>
     </form>
-    <div id="book-result">
-      <p id="book-text"></p>
+    <div id="math2-result">
+      <p id="math2-text"></p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      
-      //========================Movie Question jQuery Code
-      $("#movie-form").on("submit", function (event) {
+
+
+      //========================Math Question 1 jQuery Code
+      $("#math1-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#movie-answer");
+        var $answer = $("#math1-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-text").text("YESSSS!");
+        if (answer === "math13") {
+          $("#math1-text").text("WOW! YOU EXIST!");
         } 
         else {
-          $("#movie-text").text("Try Again!");
+          $("#math1-text").text("I GET ANGRIER FOR EVERY PROBLEM YOU GET WRONG!");
         }
       });
 
-      //=======================Book Question jQuery Code
-      $("#book-form").on("submit", function (event) {
+      //=======================Math Question 2 jQuery Code
+      $("#math2-form").on("submit", function (event) {
         event.preventDefault();
 
-        var $answer = $("#book-answer");
+        var $answer = $("#math2-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-text").text("YESSSS!");
+        if (answer === "math22") {
+          $("#math2-text").text("WOW! YOU EXIST!");
         } 
         else {
-          $("#book-text").text("Try Again!");
+          $("#math2-text").text("I HEAR EVERY DOOR YOU OPEN!");
         }
       });
       

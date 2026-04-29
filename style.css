@@ -1,4 +1,24 @@
-#movie-result {
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+button {
+  font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}
+
+option {
+  font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#math1-answer {
+font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#math2-answer {
+font-family:  "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#math1-result {
   background: rgb(244, 98, 181);
   border: 5px solid black;
   font-size: 24px;
@@ -7,16 +27,19 @@
   margin-bottom: 20px;
 }
 
-#book-result {
+#math2-result {
   background: rgb(196, 159, 255);
   border: 5px solid black;
   font-size: 24px;
   min-height: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
-}
+
 
 hr {
   height: 5px;
   background-color: black;
 }
+
+
+
