@@ -34,7 +34,7 @@ font-family:  "Comic Sans MS", "Comic Sans", cursive;
   min-height: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
-
+}
 
 hr {
   height: 5px;
@@ -42,4 +42,19 @@ hr {
 }
 
 
+#img-b {
+height: 250px;
+display: none;
+
+
+
+}
+
+#spider {
+height: 250px;
+display: none;
+
+
+
+}
 

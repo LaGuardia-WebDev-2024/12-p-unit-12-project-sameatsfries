@@ -1,13 +1,13 @@
 <!-- Unit 12 Project
 Requirements
 [x] Two Interactive Drop-down Inputs 
-[  ] Standard Animation
-[  ] Custom Animation
+
+
 [  ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
-[ no ] Feature 2 - Chain jQuery Methods
+
 [ no ] Feature 3 - .mouseover() & .mouseOut() Methods
 [ no ] Feature 4 - :hover Feature 
 [ no ] Feature 5 - Add an Additional Interactive Drop-down
@@ -23,41 +23,48 @@ Select ONE Additional Feature to Add
   <body>
     <h1>You Can Think Pad</h1>
     <hr />
+    
     <!-- Math Question 1 -->
     <form id="math1-form">
       <label>
-        <strong>Solve Math Q1</strong><br>8+7=?
+        <strong>do you have arachnaphobia</strong><br>
         <select id="math1-answer">
-          <option value="math11">56</option>
-          <option value="math12">1</option>
-          <option value="math13">15</option>
-          <option value="math14">14</option>
+          <option value="math11">na</option>
+          <option value="math12">na</option>
+          <option value="math13">ye</option>
+          <option value="math14">na</option>
         </select>
       </label>
-      <button type="submit">Check Math Answer</button>
+      <button type="submit">if you said ye im warning you now</button>
     </form>
     <div id="math1-result">
       <p id="math1-text"></p>
+      <img id="spider" src="https://tse4.mm.bing.net/th/id/OIP.xFXe1qLNBBYv6ny9rdBM5QHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"/>
+
     </div>
     <hr />
     <!-- Math Question 2 -->
     <form id="math2-form">
       <label>
-        <strong>Solve Math Q2</strong><br>4-9=?
+        <strong>what insect will it bee</strong><br>
         <select id="math2-answer">
-          <option value="math21">-36</option>
-          <option value="math22">-5</option>
-          <option value="math23">13</option>
-          <option value="math24">5</option>
+          <option value="math21">wasp 😂</option>
+          <option value="math22">bee ;)</option>
+          <option value="math23">bee :(</option>
+          <option value="math24">:(</option>
         </select>
       </label>
-      <button type="submit">Check Math Answer</button>
+      <button type="submit">What will it Bee</button>
     </form>
     <div id="math2-result">
       <p id="math2-text"></p>
+<img id="img-b" src="https://www.pestend.ca/wp-content/uploads/2018/04/Bumble-Bees-1.jpg"/>
+
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+
 
 
       //========================Math Question 1 jQuery Code
@@ -68,10 +75,14 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "math13") {
-          $("#math1-text").text("WOW! YOU EXIST!");
+
+
+
+          $("#math1-text").hide().fadeIn().text("NICE");
+          $("#spider").show()
         } 
         else {
-          $("#math1-text").text("I GET ANGRIER FOR EVERY PROBLEM YOU GET WRONG!");
+          $("#math1-text").text("not yet there");
         }
       });
 
@@ -83,10 +94,17 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "math22") {
-          $("#math2-text").text("WOW! YOU EXIST!");
+          $("#math2-text").animate({
+    "font-size": '+=10px',
+    height: '+=150px',
+    width: '+=150px'
+  }).text("NICE");
+$("#img-b").show()
+
+
         } 
         else {
-          $("#math2-text").text("I HEAR EVERY DOOR YOU OPEN!");
+          $("#math2-text").text("you dont like jazz :(  ");
         }
       });
       
